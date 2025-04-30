@@ -46,12 +46,12 @@ public class PeopleController : ControllerBase
             _pessoas.Add(new Person
             {
                 Cpf = cpf,
-                Name = $"{nome} {surname}",
-                Gender = gender,
-                Address = street,
-                Age = age,
-                City = city,
-                State = state
+                Nome = $"{nome} {surname}",
+                Genero = gender,
+                Endereco = street,
+                Idade = age,
+                Municipio = city,
+                Estado = state
             });
         }
     }

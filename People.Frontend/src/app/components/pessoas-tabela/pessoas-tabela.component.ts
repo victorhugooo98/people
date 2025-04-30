@@ -28,7 +28,7 @@ import { Pessoa } from '../../models/pessoa';
   styleUrl: './pessoas-tabela.component.css'
 })
 export class PessoasTabelaComponent implements OnInit, AfterViewInit {
-  displayedColumns: string[] = ['cpf', 'name', 'gender', 'age', 'address', 'city', 'state'];
+  displayedColumns: string[] = ['cpf', 'nome', 'genero', 'idade', 'endereco', 'municipio', 'estado'];
 
   pessoas = signal<Pessoa[]>([]);
 
@@ -44,7 +44,7 @@ export class PessoasTabelaComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     // Configurar a função de filtragem personalizada (opcional)
     this.dataSource.filterPredicate = (data: Pessoa, filter: string) => {
-      return data.name.toLowerCase().includes(filter);
+      return data.nome.toLowerCase().includes(filter);
     };
   }
 

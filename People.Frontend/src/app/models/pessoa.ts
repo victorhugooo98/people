@@ -1,9 +1,9 @@
 export interface Pessoa {
   cpf: string;
-  name: string;
-  gender: string;
-  address: string;
-  age: number;
-  city: string;
-  state: string;
+  nome: string;
+  genero: string;
+  endereco: string;
+  idade: number;
+  municipio: string;
+  estado: string;
 }

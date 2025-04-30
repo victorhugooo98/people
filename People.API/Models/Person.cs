@@ -3,10 +3,10 @@ namespace People.API.Models;
 public class Person
 {
     public string Cpf { get; set; } = null!;
-    public string Name { get; set; } = null!;
-    public string Gender { get; set; } = null!;
-    public string Address { get; set; } = null!;
-    public int Age { get; set; }
-    public string City { get; set; } = null!;
-    public string State { get; set; } = null!;
+    public string Nome { get; set; } = null!;
+    public string Genero { get; set; } = null!;
+    public string Endereco { get; set; } = null!;
+    public int Idade { get; set; }
+    public string Municipio { get; set; } = null!;
+    public string Estado { get; set; } = null!;
 }
