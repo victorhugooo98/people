@@ -1,0 +1,4 @@
+GET {{API_HostAddress}}/api/People/
+Accept: application/json
+
+###

@@ -1,0 +1,67 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #3f51b5;
+  margin-bottom: 20px;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+mat-form-field {
+  width: 400px;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-column-cpf {
+  max-width: 120px;
+}
+
+.mat-column-idade {
+  max-width: 80px;
+}
+
+.mat-column-estado {
+  max-width: 80px;
+}
+
+
+/* Adicione isto ao seu arquivo CSS */
+.no-data-message {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #777;
+}
+
+.mat-row:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Melhoria na responsividade para telas menores */
+@media screen and (max-width: 768px) {
+  .actions-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .mat-column-endereco {
+    display: none; /* Oculta a coluna de endereço em telas pequenas */
+  }
+}
